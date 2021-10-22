@@ -6,3 +6,5 @@ RUN apt install apt-transport-https dirmngr gnupg ca-certificates \
     && sudo apt update \
     apt install mono-devel \
     mono -v
+    
+CMD ["bash"]
