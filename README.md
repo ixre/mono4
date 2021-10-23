@@ -14,5 +14,6 @@ name: default
 steps:
  - name: "compile for fx48"
    image: jarry6/drone-mono4:latest
-   exec: bash ./aspnet_pack.sh
+   settings:
+     exec: bash ./aspnet_pack.sh   
 ```
