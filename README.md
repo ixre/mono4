@@ -8,7 +8,11 @@ Mono V4.8.1 complie toolchans and plugin for drone.
 ## Drone-mono4 plugin
 
 ```
+kind: pipeline
+name: default
+
+steps:
  - name: "compile for fx48"
-  image: jarry6/drone-mono4:latest
-  command: bash ./aspnet_pack.sh
+   image: jarry6/drone-mono4:latest
+   exec: bash ./aspnet_pack.sh
 ```
