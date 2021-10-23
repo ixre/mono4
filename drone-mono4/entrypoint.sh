@@ -1,6 +1,6 @@
 #!/bin/env/bash
 
-if [ "${PLUGIN_EXEC}" = "" ];then
+if [ "${PLUGIN_EXEC}" -eq "" ];then
 	echo "NOT SET COMMAND";
 	exit 1;
 fi
