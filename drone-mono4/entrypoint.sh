@@ -6,4 +6,4 @@ if [ "${PLUGIN_EXEC}" = "" ];then
 fi
 
 echo "> ${PLUGIN_EXEC}"
-bash -c "${PLUGIN_EXEC}"
+sh -c "${PLUGIN_EXEC}"
