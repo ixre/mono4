@@ -3,8 +3,8 @@ FROM jarry6/mono4:latest
 
 MAINTAINER jarrysix
 
-ENV PLUGIN_EXEC = "echo \"NOT SET Command\""
+ENV PLUGIN_EXEC = ""
 
-COPY entrypoint.sh .
+COPY entrypoint.sh /
 
-ENTRYPOINT ["bash","entrypoint.sh"]
+ENTRYPOINT ["bash","/entrypoint.sh"]
